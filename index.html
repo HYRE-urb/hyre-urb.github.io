@@ -25,6 +25,8 @@
   --hh:76px;
 }
 *{box-sizing:border-box}
+html,body{margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
 html{scroll-padding-top:140px}
 body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.75;word-break:keep-all;-webkit-font-smoothing:antialiased}
 b,strong,h1,h2,h3,h4,th{font-weight:700}
@@ -405,7 +407,7 @@ tr.done td{opacity:.42}
 .s-img.doc img{aspect-ratio:auto;object-fit:contain}
 
 /* ───── Gantt ───── */
-.gantt-scroll{overflow-x:auto;padding-bottom:6px;padding-top:26px}
+.gantt-scroll{overflow-x:auto;overflow-y:hidden;padding-bottom:30px;padding-top:26px}
 .gantt{min-width:760px;position:relative;--lw:210px}
 .g-head{display:grid;grid-template-columns:repeat(var(--cols),1fr);margin-left:var(--lw);border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:24px}
 .g-head span{text-align:center;font-size:18px;font-weight:500;color:var(--muted);position:relative;font-variant-numeric:tabular-nums}
